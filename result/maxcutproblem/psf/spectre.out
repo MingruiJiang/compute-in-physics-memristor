@@ -1,0 +1,248 @@
+
+Spectre (R) Circuit Simulator
+Version 18.1.0.077 64bit -- 1 Aug 2018
+Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: mrjiang   Host: canlab-icserver   HostID: 400A1F57   PID: 97841
+Memory  available: 9.5883 GB  physical: 1.0816 TB
+Linux   : CentOS Linux release 7.9.2009 (Core)
+CPU Type: Intel(R) Xeon(R) Platinum 8480C
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [800.0] ( 112 ),  1 [800.0] ( 113 ),  2 [800.0] ( 114 )
+                 3 [800.0] ( 115 ),  4 [800.0] ( 116 ),  5 [800.0] ( 117 )
+                 6 [800.0] ( 118 ),  7 [800.0] ( 119 ),  8 [800.0] ( 120 )
+                 9 [800.0] ( 121 ), 10 [800.0] ( 122 ), 11 [800.0] ( 123 )
+                12 [800.0] ( 124 ), 13 [800.0] ( 125 ), 14 [800.0] ( 126 )
+                15 [1000.0] ( 127 ), 16 [800.0] ( 128 ), 17 [800.0] ( 129 )
+                18 [800.0] ( 130 ), 19 [800.0] ( 131 ), 20 [800.0] ( 132 )
+                21 [800.0] ( 133 ), 22 [800.0] ( 134 ), 23 [800.0] ( 135 )
+                24 [800.0] ( 136 ), 25 [800.0] ( 137 ), 26 [800.0] ( 138 )
+                27 [800.0] ( 139 ), 28 [800.0] ( 140 ), 29 [800.0] ( 141 )
+                30 [800.0] ( 142 ), 31 [800.0] ( 143 ), 32 [800.0] ( 144 )
+                33 [800.0] ( 145 ), 34 [800.0] ( 146 ), 35 [800.0] ( 147 )
+                36 [800.0] ( 148 ), 37 [800.0] ( 149 ), 38 [1100.0] ( 150 )
+                39 [800.0] ( 151 ), 40 [800.0] ( 152 ), 41 [800.0] ( 153 )
+                42 [800.0] ( 154 ), 43 [800.0] ( 155 ), 44 [800.0] ( 156 )
+                45 [800.0] ( 157 ), 46 [800.0] ( 158 ), 47 [800.0] ( 159 )
+                48 [800.0] ( 160 ), 49 [800.0] ( 161 ), 50 [800.0] ( 162 )
+                51 [800.0] ( 163 ), 52 [800.0] ( 164 ), 53 [800.0] ( 165 )
+                54 [800.0] ( 166 ), 55 [800.0] ( 167 )
+        1:      56 [800.0] ( 168 ), 57 [800.0] ( 169 ), 58 [800.0] ( 170 )
+                59 [800.0] ( 171 ), 60 [1600.0] ( 172 ), 61 [800.0] ( 173 )
+                62 [800.0] ( 174 ), 63 [800.0] ( 175 ), 64 [800.0] ( 176 )
+                65 [800.0] ( 177 ), 66 [800.0] ( 178 ), 67 [1000.0] ( 179 )
+                68 [800.0] ( 180 ), 69 [800.0] ( 181 ), 70 [800.0] ( 182 )
+                71 [800.0] ( 183 ), 72 [800.0] ( 184 ), 73 [800.0] ( 185 )
+                74 [800.0] ( 186 ), 75 [800.0] ( 187 ), 76 [800.0] ( 188 )
+                77 [800.0] ( 189 ), 78 [800.0] ( 190 ), 79 [1200.0] ( 191 )
+                80 [800.0] ( 192 ), 81 [1600.0] ( 193 ), 82 [800.0] ( 194 )
+                83 [800.0] ( 195 ), 84 [800.0] ( 196 ), 85 [800.0] ( 197 )
+                86 [800.0] ( 198 ), 87 [800.0] ( 199 ), 88 [800.0] ( 200 )
+                89 [800.0] ( 201 ), 90 [800.0] ( 202 ), 91 [800.0] ( 203 )
+                92 [800.0] ( 204 ), 93 [800.0] ( 205 ), 94 [2001.0] ( 206 )
+                95 [800.0] ( 207 ), 96 [1000.0] ( 208 ), 97 [800.0] ( 209 )
+                98 [800.0] ( 210 ), 99 [800.0] ( 211 ), 100 [800.0] ( 212 )
+                101 [1900.0] ( 213 ), 102 [800.0] ( 214 ), 103 [800.0] ( 215 )
+                104 [800.0] ( 216 ), 105 [800.0] ( 217 ), 106 [800.0] ( 218 )
+                107 [800.0] ( 219 ), 108 [800.0] ( 220 ), 109 [800.0] ( 221 )
+                110 [800.0] ( 222 ), 111 [800.0] ( 223 )
+        
+System load averages (1min, 5min, 15min) : 0.7 %, 0.6 %, 0.5 %
+Hyperthreading is enabled
+HPC is enabled
+
+
+Simulating `./netlist/maxcutproblem.scs' on canlab-icserver at 5:02:50 PM, Mon Sep 1, 2025 (process id: 97841).
+Current working directory: /home/mrjiang/Ising_simu/demo
+Command line:
+    /EDA/cadence/SPECTRE181/tools/bin/spectre -64  \
+        ./netlist/maxcutproblem.scs +escchars +multithread  \
+        ++aps=liberal =log ./result/maxcutproblem/psf/spectre.out  \
+        -format psfascii -raw ./result/maxcutproblem/psf
+
+Loading /EDA/cadence/SPECTRE181/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /EDA/cadence/SPECTRE181/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /EDA/cadence/SPECTRE181/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /EDA/cadence/SPECTRE181/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /EDA/cadence/SPECTRE181/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/mrjiang/Ising_simu/demo/netlist/maxcutproblem.scs
+Reading file:  /EDA/cadence/SPECTRE181/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /EDA/cadence/SPECTRE181/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/mrjiang/Ising_simu/demo/model/veriloga/opamp.va
+Reading file:  /EDA/cadence/SPECTRE181/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading file:  /EDA/cadence/SPECTRE181/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for NDB Parsing: CPU = 402.474 ms, elapsed = 455.562 ms.
+Time accumulated: CPU = 441.173 ms, elapsed = 455.585 ms.
+Peak resident memory used = 53.4 Mbytes.
+
+Created directory maxcutproblem.ahdlSimDB/ (775)
+Created directory maxcutproblem.ahdlSimDB//8fc5ced8e4bceed76a62ab1dd3b396be.opamp.ahdlcmi/ (775)
+Created directory maxcutproblem.ahdlSimDB//8fc5ced8e4bceed76a62ab1dd3b396be.opamp.ahdlcmi/Linux-64/ (775)
+Compiling ahdlcmi module library for opamp.
+Finished compilation in 1.7 s (elapsed) for opamp.
+Installed compiled interface for opamp.
+Reading link:  /EDA/cadence/SPECTRE181/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading link:  /EDA/cadence/SPECTRE181/tools.lnx86/spectre/etc/ahdl/constants.h
+Opening directory maxcutproblem.ahdlSimDB/ (775)
+Created directory maxcutproblem.ahdlSimDB//bsource_1b6502.va.bsource_1b6502.ahdlcmi/ (775)
+Created directory maxcutproblem.ahdlSimDB//bsource_1b6502.va.bsource_1b6502.ahdlcmi/Linux-64/ (775)
+Compiling ahdlcmi module library for bsource_1b6502.
+Finished compilation in 1.25 s (elapsed) for bsource_1b6502.
+Installed compiled interface for bsource_1b6502.
+Time for Elaboration: CPU = 1.22823 s, elapsed = 3.07357 s.
+Time accumulated: CPU = 1.66971 s, elapsed = 3.52931 s.
+Peak resident memory used = 67.2 Mbytes.
+
+
+Time for EDB Visiting: CPU = 20.598 ms, elapsed = 20.618 ms.
+Time accumulated: CPU = 1.69059 s, elapsed = 3.55021 s.
+Peak resident memory used = 67.5 Mbytes.
+
+
+Notice from spectre during initial setup.
+    Multithreading is disabled due to the size of the design being too small.
+
+Global user options:
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 64
+     bsource_1b6502 32    
+              opamp 32    
+           resistor 1024  
+
+Analysis and control statement inventory:
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 1     
+
+
+Notice from spectre during initial setup.
+    Fast APS Enabled.
+
+Time for parsing: CPU = 7.719 ms, elapsed = 8.38494 ms.
+Time accumulated: CPU = 1.69847 s, elapsed = 3.55875 s.
+Peak resident memory used = 68.6 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+Notice from spectre during transient analysis `tran'.
+    Specified 'noisefmin' is smaller than 1/stop time. 'noisefmin' has been changed to 2 MHz.
+
+
+*************************************************
+Transient Analysis `tran': time = (0 s -> 500 ns)
+*************************************************
+DC simulation time: CPU = 7.256 ms, elapsed = 7.27677 ms.
+
+Opening the PSFASCII file ./result/maxcutproblem/psf/tran.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 500 ns
+    step = 500 ps
+    maxstep = 10 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 10e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = liberal
+    method = trapgear2
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+    rabsshort = 1 mOhm
+    compression = wildcardonly
+    trannoisemethod = default
+    noisefmax = 10 GHz
+    noisefmin = 2 MHz
+    noiseseed = 97841
+
+
+Notice from spectre during transient analysis `tran'.
+    Multithreading is disabled due to the size of the design being too small.
+
+
+Output and IC/nodeset summary:
+                 save   32      (voltage)
+
+    tran: time = 12.5 ns      (2.5 %), step = 50 ps         (10 m%)
+    tran: time = 37.55 ns    (7.51 %), step = 50 ps         (10 m%)
+    tran: time = 62.55 ns    (12.5 %), step = 50 ps         (10 m%)
+    tran: time = 87.5 ns     (17.5 %), step = 50 ps         (10 m%)
+    tran: time = 112.5 ns    (22.5 %), step = 50 ps         (10 m%)
+    tran: time = 137.5 ns    (27.5 %), step = 50 ps         (10 m%)
+    tran: time = 162.5 ns    (32.5 %), step = 50 ps         (10 m%)
+    tran: time = 187.5 ns    (37.5 %), step = 50 ps         (10 m%)
+    tran: time = 212.5 ns    (42.5 %), step = 50 ps         (10 m%)
+    tran: time = 237.5 ns    (47.5 %), step = 50 ps         (10 m%)
+    tran: time = 262.5 ns    (52.5 %), step = 50 ps         (10 m%)
+    tran: time = 287.5 ns    (57.5 %), step = 50 ps         (10 m%)
+    tran: time = 312.5 ns    (62.5 %), step = 50 ps         (10 m%)
+    tran: time = 337.5 ns    (67.5 %), step = 50 ps         (10 m%)
+    tran: time = 362.5 ns    (72.5 %), step = 50 ps         (10 m%)
+    tran: time = 387.5 ns    (77.5 %), step = 50 ps         (10 m%)
+    tran: time = 412.5 ns    (82.5 %), step = 50 ps         (10 m%)
+    tran: time = 437.5 ns    (87.5 %), step = 50 ps         (10 m%)
+    tran: time = 462.5 ns    (92.5 %), step = 50 ps         (10 m%)
+    tran: time = 487.5 ns    (97.5 %), step = 50 ps         (10 m%)
+Number of accepted tran steps =             10051
+
+Maximum value achieved for any signal of each quantity: 
+V: V(OA_27.N) = 199.3 mV
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (7.2 %)       1 (3.8 %)       2 (1.8 %)       3 (2.0 %)
+                 4 (6.8 %)       7 (1.1 %)       8 (1.4 %)      10 (1.8 %)
+                15 (17.8 %)     16 (1.4 %)      17 (2.0 %)      18 (1.8 %)
+                19 (7.9 %)      22 (1.5 %)      31 (1.7 %)      33 (1.4 %)
+                37 (1.8 %)      39 (1.1 %)      44 (1.1 %)      45 (1.5 %)
+                46 (1.8 %)      47 (1.4 %)      48 (2.1 %)      49 (1.8 %)
+                50 (1.7 %)      51 (2.7 %)      53 (15.9 %)     54 (3.7 %)
+                55 (1.7 %)      59 (1.5 %)      62 (1.1 %)      65 (1.2 %)
+                66 (26.8 %)     81 (1.1 %)      94 (7.1 %)      95 (1.1 %)
+                101 (1.4 %)     113 (4.7 %)     114 (2.9 %)     115 (3.2 %)
+                116 (2.0 %)     117 (2.3 %)     118 (25.5 %)    119 (1.4 %)
+                120 (2.9 %)     122 (2.9 %)     126 (1.2 %)     129 (1.1 %)
+                139 (1.1 %)     146 (1.7 %)     147 (1.4 %)     148 (1.4 %)
+                149 (1.5 %)     150 (1.8 %)     151 (1.1 %)     160 (1.8 %)
+                162 (1.8 %)     169 (24.3 %)    170 (20.6 %)    171 (4.7 %)
+                172 (3.8 %)     173 (2.7 %)     174 (3.0 %)     175 (1.5 %)
+                176 (1.1 %)     177 (2.9 %)     178 (2.0 %)     184 (10.1 %)
+                206 (1.7 %)     207 (1.8 %)     
+        Other   
+Initial condition solution time: CPU = 7.34 ms, elapsed = 7.36213 ms.
+Intrinsic tran analysis time:    CPU = 3.21257 s, elapsed = 3.2134 s.
+Total time required for tran analysis `tran': CPU = 3.22655 s, elapsed = 3.22739 s.
+Time accumulated: CPU = 4.93471 s, elapsed = 6.79637 s.
+Peak resident memory used = 70.3 Mbytes.
+
+
+Aggregate audit (5:02:57 PM, Mon Sep 1, 2025):
+Time used: CPU = 4.95 s, elapsed = 6.81 s, util. = 72.7%.
+Time spent in licensing: elapsed = 182 ms.
+Peak memory used = 70.7 Mbytes.
+Simulation started at: 5:02:50 PM, Mon Sep 1, 2025, ended at: 5:02:57 PM, Mon Sep 1, 2025, with elapsed time (wall clock): 6.81 s.
+spectre completes with 0 errors, 0 warnings, and 4 notices.

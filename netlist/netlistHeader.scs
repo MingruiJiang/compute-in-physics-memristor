@@ -1,0 +1,7 @@
+include "../model/ptm45nm.ptm"
+ahdl_include "../model/veriloga/opamp.va"
+
+simulator lang=spectre
+global 0
+
+parameters ttime=5000u

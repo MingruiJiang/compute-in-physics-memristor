@@ -1,0 +1,39 @@
+`include "disciplines.vams"
+`include "constants.vams"
+module opamp(inp,inm,out);
+input inp,inm;
+output out;
+electrical inp,inm,out,N,gnd;
+branch (N,gnd) cur, res, cap, lim;
+parameter real Gain=1k; // gain of amplifier
+parameter real Vio=0; // input offset
+parameter real Voh=5; // output high voltage
+parameter real Vol=0; // output low voltage
+parameter real GBW=10M; // gain bandwidth
+parameter real SR=20M; // slew rate
+parameter real Rdc=300; // output resistance DC
+parameter Rac=100; // output resistance AC
+real Ro, Co, Isat, Vnom; // establish internal variables used in expressions
+`define fclip(V,isat,dV) isat*exp(4.6*(V)/dV) // define a parameterized expression
+analog function real ftanh; // define a tanh function for output smoothing
+input x,L,H; real x,L,H,dv;
+begin
+dv=(H-L) / 2;
+ftanh = L+ dv*(1+ tanh(x/dv));
+end
+endfunction
+analog begin
+@(initial_step) begin // to establish initial fixed constants
+Ro = Rdc-Rac;
+Co = 1/(`M_TWO_PI*Ro*GBW/Gain);
+Isat = Co*SR;
+end
+Vnom = Gain*(V(inp,inm)-Vio); // output voltage gain expression
+V(gnd) <+ 0; // establish ground reference, actually not need with Verilog-A coding
+I(cur) <+ ftanh(-Vnom/Ro,Isat,-Isat); // pass current using tanh smoothing function
+I(res) <+ (V(res)-(Voh+Vol)/2)/Ro; // pass output current
+I(cap) <+ ddt(Co*V(cap)); // pass current effects from output capacitance
+I(lim) <+ `fclip(V(lim)-Voh,Isat,0.1) - `fclip(Vol-V(lim),Isat,0.1); // limit output swing
+I(out,N) <+ V(out,N)/Rac; // add current from output impedance
+end
+endmodule 
